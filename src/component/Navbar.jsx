@@ -1,18 +1,23 @@
 
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo/editable-hotel-logo-vector-business-corporate-identity-hostel_53876-111553.avif'
+import { useState } from 'react'
 const Navbar = () => {
+   
+  const [user , setUser] = useState();
+
   return (
     <div className='navbar bg-base-100 shadow-sm container px-4 mx-auto'>
       <div className='flex-1'>
-        <div className='flex gap-2 items-center'>
+        <Link to= '/' className='flex gap-2 items-center'>
           <img className='w-auto h-7' src= {logo} alt='' />
           <span className='font-bold'>Rest inn Hotel</span>
-        </div>
+        </Link>
       </div>
       <div className='flex-none'>
         <ul className='menu menu-horizontal px-1'>
           <li>
-            <div>Home</div>
+            <Link to='/' >Home</Link>
           </li>
           <li>
             <div>Rooms</div>
@@ -20,12 +25,15 @@ const Navbar = () => {
           <li>
             <div>My Bookings</div>
           </li>
-          <li>
-            <div>Login</div>
-          </li>
+           {!user && 
+           <li>
+           <Link to= '/login'>Login</Link>
+         </li>}
         </ul>
 
-        <div className='dropdown dropdown-end z-50'>
+        {
+          user &&
+          <div className='dropdown dropdown-end z-50'>
           <div
             tabIndex={0}
             role='button'
@@ -49,6 +57,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        }
       </div>
     </div>
   )
