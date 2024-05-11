@@ -1,7 +1,36 @@
 import { Link } from "react-router-dom"
 import logo from '../assets/logo/editable-hotel-logo-vector-business-corporate-identity-hostel_53876-111553.avif'
 import signup from '../assets/image/booking-accommodation-mobile-application-website-ordering-guestrooms-finding-hostels-location_335657-2489.jpg'
+import { useContext } from "react";
+import { AuthContext } from "../Provaider/AuthProvider";
 const Register = () => {
+
+
+    const {crateUser} = useContext(AuthContext);
+
+    const handleSignUp = event =>{
+        event.preventDefault();
+        const from = event.target;
+        const name = from.name.value;
+        const photo = from.photo.value;
+        const email = from.email.value;
+        const password = from.password.value;
+        console.log(name,email,password,photo);
+        
+        crateUser(email, password)
+        .then(result =>{
+             const user = result.user;
+             console.log(user);
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+      }
+
+
+
+
+
     return (
       <div className='flex justify-center items-center min-h-[calc(100vh-306px)]'>
         <div className='flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl '>
@@ -14,11 +43,11 @@ const Register = () => {
               />
             </div>
   
-            <p className='mt-3 text-xl text-center text-gray-600 '> 
-            Rest in hotel Get Free Account Now.
+            <p className='mt-3 font-semibold text-center text-3xl  text-gray-600 '> 
+            Rest in Hotel
             </p>
   
-            <div className='flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg   hover:bg-gray-50 '>
+            {/* <div className='flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg   hover:bg-gray-50 '>
               <div className='px-4 py-2'>
                 <svg className='w-6 h-6' viewBox='0 0 40 40'>
                   <path
@@ -43,18 +72,18 @@ const Register = () => {
               <span className='w-5/6 px-4 py-3 font-bold text-center'>
                 Sign in with Google
               </span>
-            </div>
+            </div> */}
   
             <div className='flex items-center justify-between mt-4'>
               <span className='w-1/5 border-b  lg:w-1/4'></span>
   
               <div className='text-xs text-center text-gray-500 uppercase  hover:underline'>
-                or Registration with email
+                get free account now
               </div>
   
               <span className='w-1/5 border-b dark:border-gray-400 lg:w-1/4'></span>
             </div>
-            <form>
+            <form onSubmit={handleSignUp}>
               <div className='mt-4'>
                 <label
                   className='block mb-2 text-sm font-medium text-gray-600 '

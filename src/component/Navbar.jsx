@@ -1,10 +1,29 @@
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo/editable-hotel-logo-vector-business-corporate-identity-hostel_53876-111553.avif'
-import { useState } from 'react'
+import { useContext } from 'react'
+import { AuthContext } from '../Provaider/AuthProvider'
+import Swal from 'sweetalert2'
+
+
 const Navbar = () => {
-   
-  const [user , setUser] = useState();
+ 
+  const {user,logOut} = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleLogOUt = async () => {
+    await logOut()
+    if (logOut.insertedId) {
+        Swal.fire({
+            title: 'Success!',
+            text: 'User Added successfully',
+            icon: 'success',
+            confirmButtonText: 'Cool'
+        })
+
+    }
+    navigate("/login")
+}
 
   return (
     <div className='navbar bg-base-100 shadow-sm container px-4 mx-auto'>
@@ -43,7 +62,7 @@ const Navbar = () => {
               <img
                 referrerPolicy='no-referrer'
                 alt='User Profile Photo'
-                src=''
+                src={user?.photoURL}
               />
             </div>
           </div>
@@ -53,7 +72,7 @@ const Navbar = () => {
           >
 
             <li className='mt-2'>
-              <button className='bg-gray-200 block text-center'>Logout</button>
+              <button onClick={handleLogOUt} className='bg-gray-200 block text-center'>Logout</button>
             </li>
           </ul>
         </div>

@@ -2,7 +2,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Laout/Main";
 import Login from "../Pagse/Login";
-import Registration from "../Pagse/Register";
 import Register from "../Pagse/Register";
 
 const router = createBrowserRouter([
