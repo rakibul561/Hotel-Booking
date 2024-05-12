@@ -26,11 +26,11 @@ const Navbar = () => {
 }
 
   return (
-    <div className='navbar bg-base-100 shadow-sm container px-4 mx-auto'>
+    <div className='navbar bg-base-100 shadow-sm mx-auto'>
       <div className='flex-1'>
         <Link to= '/' className='flex gap-2 items-center'>
           <img className='w-auto h-7' src= {logo} alt='' />
-          <span className='font-bold'>Rest inn Hotel</span>
+          <span className='font-bold'>Rest in Hotel</span>
         </Link>
       </div>
       <div className='flex-none'>

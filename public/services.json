@@ -1,0 +1,62 @@
+[
+    {
+        "room_id": "room001",
+        "description": "Cozy Studio Apartment with City View",
+        "price_per_night": 100,
+        "room_size": "300 sqft",
+        "availability": true,
+        "room_image": "https://i.ibb.co/LP5HYd3/view-lighting-device-with-futuristic-design-23-2151037534.jpg",
+        "special_offers": [],
+        "reviews": "No reviews yet"
+    },
+    {
+        "room_id": "room002",
+        "description": "Luxury Suite with Oceanfront Balcony",
+        "price_per_night": 300,
+        "room_size": "600 sqft",
+        "availability": false,
+        "room_image": "https://i.ibb.co/sCB3GvS/indoor-design-luxury-resort-23-2150497252.jpg",
+        "special_offers": ["Complimentary Breakfast", "Free Spa Access"],
+        "reviews": "Great room, loved the view!"
+    },
+    {
+        "room_id": "room003",
+        "description": "Rustic Cabin in the Woods",
+        "price_per_night": 150,
+        "room_size": "400 sqft",
+        "availability": true,
+        "room_image": "https://i.ibb.co/jwQ8M4C/photorealistic-house-with-wooden-architecture-timber-structure-23-2151302594.jpg",
+        "special_offers": ["10% Off for Weekday Stays"],
+        "reviews": "No reviews yet"
+    },
+    {
+        "room_id": "room004",
+        "description": "Modern Loft with City Skyline Views",
+        "price_per_night": 200,
+        "room_size": "500 sqft",
+        "availability": true,
+        "room_image": "https://i.ibb.co/hgfxDW7/front-shot-city-from-high-floor-window-view-1409-7647.jpg",
+        "special_offers": [],
+        "reviews": "No reviews yet"
+    },
+    {
+        "room_id": "room005",
+        "description": "Historic Mansion Room with Garden Access",
+        "price_per_night": 400,
+        "room_size": "800 sqft",
+        "availability": true,
+        "room_image": "https://i.ibb.co/vQ1XB1j/beautiful-castle-architecture-23-2150754883.jpg",
+        "special_offers": ["Champagne Welcome"],
+        "reviews": "No reviews yet"
+    },
+    {
+        "room_id": "room006",
+        "description": "Charming Cottage near the Lake",
+        "price_per_night": 120,
+        "room_size": "350 sqft",
+        "availability": false,
+        "room_image": "https://i.ibb.co/9qVFp8T/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet-105762-2276.jpg",
+        "special_offers": [],
+        "reviews": "No reviews yet"
+    }
+]
