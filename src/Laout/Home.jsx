@@ -4,10 +4,9 @@ import Rooms from "./Rooms";
 const Home = () => {
     return (
         <div>
-           
-             {/* <Carosel></Carosel> */}
-             <Carosel></Carosel>
-             <Rooms></Rooms>
+            {/* <Carosel></Carosel> */}
+            <Carosel></Carosel>
+            <Rooms></Rooms>
         </div>
     );
 };

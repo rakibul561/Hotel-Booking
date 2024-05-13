@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../component/Navbar";
 import Fotter from "../component/Fotter";
-import Home from "./Home";
+
+
 
 
 const Main = () => {
@@ -9,12 +10,13 @@ const Main = () => {
         <div>
             
             <div className="max-w-7xl mx-auto">
-            <Navbar></Navbar>
-                <Outlet>
-                </Outlet>
-                <Home></Home>
+                <Navbar></Navbar>
+                <Outlet></Outlet>
+               
             </div>
-            <Fotter></Fotter>
+            <div className="mt-8">
+                <Fotter></Fotter>
+        </div>
         </div>
     );
 };

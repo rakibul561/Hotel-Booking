@@ -13,7 +13,7 @@ const Slide = ({ image }) => {
                         Rest in <span className="text-green-500">Hotel  </span>
                     </h1>
                     <br />
-                    <p className="text-sm">Experience seamless hotel booking on our platform with competitive rates, a wide selection of hotels, <br /> exclusive deals, user-friendly interface, and efficient booking management. Enjoy peace of mind knowing your <br />accommodations  are taken care of effortlessly, leaving you free to focus on enjoying your travel experience to the fullest
+                    <p className="text-sm text-white">Experience seamless hotel booking on our platform with competitive rates, a wide selection of hotels, <br /> exclusive deals, user-friendly interface, and efficient booking management. Enjoy peace of mind knowing your <br />accommodations  are taken care of effortlessly, leaving you free to focus on enjoying your travel experience to the fullest
                     </p>
                 </div>
             </div>

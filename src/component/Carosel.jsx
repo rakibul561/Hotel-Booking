@@ -24,22 +24,24 @@ export default function Carosel() {
         spaceBetween={30}
         centeredSlides={true}
         loop={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
       >
-      <SwiperSlide><Slide iamge={bgimg1}></Slide> </SwiperSlide>
-      <SwiperSlide><Slide image={bgimg2}></Slide> </SwiperSlide>
-      <SwiperSlide><Slide image={bgimg3}></Slide> </SwiperSlide>
+        <SwiperSlide><Slide image={bgimg1}></Slide> </SwiperSlide>
+        <SwiperSlide><Slide image={bgimg2}></Slide> </SwiperSlide>
+        <SwiperSlide><Slide image={bgimg3}></Slide> </SwiperSlide>
 
-    </Swiper>
+
+
+      </Swiper>
     </div >
   );
 }
