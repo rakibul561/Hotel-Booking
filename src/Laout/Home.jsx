@@ -1,4 +1,5 @@
 import Carosel from "../component/Carosel";
+import MapComponent from "./Map";
 import Rooms from "./Rooms";
 
 const Home = () => {
@@ -6,7 +7,12 @@ const Home = () => {
         <div>
             {/* <Carosel></Carosel> */}
             <Carosel></Carosel>
+            <div className="mt-16  mb-4">
+                <h2 className="text-5xl text-center font-semibold mb-8">Rest In Hotel location</h2>
+                <MapComponent></MapComponent>
+            </div>
             <Rooms></Rooms>
+           
         </div>
     );
 };

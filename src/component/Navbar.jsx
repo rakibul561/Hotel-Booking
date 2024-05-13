@@ -105,13 +105,13 @@ const Navbar = () => {
               className={`absolute z-50  ${userOpen ? "block" : "hidden"
                 } flex flex-col  gap-4  shadow-lg bg-base-200 px-8 py-4 top-16 `}
             >
-              <p className="text-sm  font-semibold">{user?.displayName}</p>
-              <p className="text-sm font-semibold">{user?.email}</p>
+              <p className="text-sm text-black font-semibold">{user?.displayName}</p>
+              <p className="text-sm text-black font-semibold">{user?.email}</p>
 
               {
                 user && <button
 
-                  className="bg-[#FF497C] hover:bg-[#ab3154] duration-200 text-white font-bold px-4 xl:px-6 py-1 rounded cursor-pointer"
+                  className="bg-[#FF497C] hover:bg-[#ab3154] duration-200 text-black font-bold px-4 xl:px-6 py-1 rounded cursor-pointer"
                   onClick={handleLogOUt}
                 >
                   logout
