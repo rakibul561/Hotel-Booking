@@ -1,7 +1,7 @@
 
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo/editable-hotel-logo-vector-business-corporate-identity-hostel_53876-111553.avif'
-import { useContext, useEffect, useState } from 'react'
+import { useContext,  useState } from 'react'
 import { AuthContext } from '../Provaider/AuthProvider'
 import Swal from 'sweetalert2'
 import useTheme from '../hooks/theme/useTheme'
@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
 
     <div>
-      <div className="navbar bg-green-500 text-white mt-4 shadow-md rounded-lg ">
+      <div className="navbar bg-green-500 text-white shadow-md rounded-lg ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

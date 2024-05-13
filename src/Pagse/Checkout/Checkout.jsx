@@ -25,7 +25,7 @@ const Checkout = () => {
             email,
             room_image,
             date,
-            service: price_per_night,
+            service: description,
             service_id: _id,
             price: price_per_night
         }
