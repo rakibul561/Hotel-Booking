@@ -9,12 +9,14 @@ import Home from "../Laout/Home";
 import Checkout from "../Pagse/Checkout/Checkout";
 import MyBookings from "../Pagse/MyBookings";
 import AllCard from "../Pagse/AllCard";
+import ErrorPagse from "../Pagse/ErrorPagse";
 
 const router = createBrowserRouter([
 
   {
     path: "/",
     element: <Main></Main>,
+    errorElement:<ErrorPagse></ErrorPagse>,
     children: [
       {
         path:"/",
