@@ -58,5 +58,98 @@
         "room_image": "https://i.ibb.co/9qVFp8T/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet-105762-2276.jpg",
         "special_offers": [],
         "reviews": "No reviews yet"
-    }
-]
+    },
+
+        {
+            "room_id": "room007",
+            "description": "Sunny Beachfront Villa with Private Pool",
+            "price_per_night": 500,
+            "room_size": "1000 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/98tnqdz/view-pool-hotel-ocean-water-1203-4730.jpg",
+            "special_offers": ["Private Chef Service", "Daily Housekeeping"],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room008",
+            "description": "Traditional Japanese Ryokan with Onsen",
+            "price_per_night": 250,
+            "room_size": "450 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/3Ys7fNX/view-luxurious-hotel-interior-space-23-2150683439.jpg",
+            "special_offers": ["Free Traditional Tea Ceremony"],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room009",
+            "description": "Sleek Urban Loft in the Heart of Downtown",
+            "price_per_night": 180,
+            "room_size": "550 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/9spMHjq/bangkok-thailand-august-12-2016-beautiful-luxury-bedroom-int-1203-2346.jpg",
+            "special_offers": [],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room010",
+            "description": "Mountain Chalet Retreat with Panoramic Views",
+            "price_per_night": 300,
+            "room_size": "700 sqft",
+            "availability": false,
+            "room_image": "https://i.ibb.co/WWFxvS1/pillow-bed-with-light-lamp-74190-2095.jpg",
+            "special_offers": ["Hiking Guide Included"],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room011",
+            "description": "Elegant Parisian Apartment near Champs-Élysées",
+            "price_per_night": 350,
+            "room_size": "600 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/Tq64Rc9/umbrella-chair-around-swimming-pool-hotel-resort-with-sunrise-morning-holiday-vacation-concept-1339.jpg",
+            "special_offers": ["French Wine Tasting"],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room012",
+            "description": "Secluded Treehouse Retreat in the Forest",
+            "price_per_night": 200,
+            "room_size": "300 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/VJn48fY/beautiful-umbrella-chair-around-swimming-pool-hotel-resort-74190-1006.jpg",
+            "special_offers": ["Complimentary Breakfast Basket"],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room013",
+            "description": "Quaint Farmhouse with Countryside Views",
+            "price_per_night": 180,
+            "room_size": "400 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/RTXJn41/photorealistic-house-with-wooden-architecture-timber-structure-23-2151302600.jpg",
+            "special_offers": [],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room014",
+            "description": "Contemporary Loft with Industrial Charm",
+            "price_per_night": 220,
+            "room_size": "500 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/1r3RPp9/flat-hotel-facade-background-23-2148156735.jpg",
+            "special_offers": ["Free Wi-Fi"],
+            "reviews": "No reviews yet"
+        },
+        {
+            "room_id": "room015",
+            "description": "Tropical Bungalow Retreat with Beach Access",
+            "price_per_night": 280,
+            "room_size": "600 sqft",
+            "availability": true,
+            "room_image": "https://i.ibb.co/W0T7ZVw/hammocks-umbrellas-1203-184.jpg",
+            "special_offers": [],
+            "reviews": "No reviews yet"
+        }
+    ]
+    
+

@@ -8,6 +8,7 @@ import PrivetRoute from "./PrivetRoute";
 import Home from "../Laout/Home";
 import Checkout from "../Pagse/Checkout/Checkout";
 import MyBookings from "../Pagse/MyBookings";
+import AllCard from "../Pagse/AllCard";
 
 const router = createBrowserRouter([
 
@@ -42,6 +43,12 @@ const router = createBrowserRouter([
       {
         path:'/bookings',
         element: <PrivetRoute><MyBookings></MyBookings></PrivetRoute>
+      },
+      {
+        path:'/rooms',
+        element: <PrivetRoute>
+          <AllCard></AllCard>
+        </PrivetRoute>
       }
     ]
   }

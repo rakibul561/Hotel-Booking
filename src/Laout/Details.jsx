@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { Link, useParams } from "react-router-dom";
+// import Swal from "sweetalert2";
 
 
 const Details = () => {
@@ -15,10 +17,13 @@ const Details = () => {
             .then(data => {
                 // console.log(data);
                 setProducet(data)
+               if(data){
+                toast.success('Successfully created!');
+               }
             })
     }, [id])
 
-    const { description, price_per_night, room_size, availability, room_image, _id, special_offers } = product;
+    const { description, price_per_night, room_size, room_image, _id, special_offers } = product;
 
     return (
         <div>
@@ -33,7 +38,6 @@ const Details = () => {
                             </div>
                             <p className="text-2xl">Special Ofer: {special_offers}</p>
                             <Link
-                            
                             to={`/checkout/${_id}`}
                             className="">
                             <button className="btn btn-outline text-xl w-[200px] mt-2 btn-success">Book Now</button>

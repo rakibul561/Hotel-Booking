@@ -6,7 +6,7 @@ import Room from "./Room";
 const Rooms = () => {
 
     const [services, setServices] = useState([]);
-    // console.log(services);
+    const item = services.slice(0, 6);
 
     useEffect(() => {
         fetch('http://localhost:5000/serviecs')
@@ -24,7 +24,7 @@ const Rooms = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                {
-                services.map(service => <Room
+                item.map(service => <Room
                 service={service}
                 key={service._id}
                 >

@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
+import { FaEdit } from "react-icons/fa";
+
+const BookingRow = ({ book, handleDelete }) => {
+
+    const { customerName, _id, email, room_image, date, price, service } = book;
 
 
-const BookingRow = ({ book, handleDelete}) => {
-
-    const { customerName,_id, email, room_image, date, price, service } = book;
-
-   
 
 
 
@@ -35,13 +35,15 @@ const BookingRow = ({ book, handleDelete}) => {
 
             <td>${price}</td>
             <th>
-                <button onClick={()=> handleDelete(_id)
-                 } className="btn btn-circle">
+                <button onClick={() => handleDelete(_id)
+                } className="btn btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
             </th>
             <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+                <button className="btn btn-square btn-outline">
+                   <FaEdit></FaEdit>
+                </button>
             </th>
         </tr>
     );

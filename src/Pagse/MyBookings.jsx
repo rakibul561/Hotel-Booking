@@ -80,8 +80,9 @@ const MyBookings = () => {
                             <th>Rooms</th>
                             <th>date</th>
                             <th>Price</th>
-                            <th>Update</th>
                             <th>Delete</th>
+                            <th>Update</th>
+                           
                         </tr>
                     </thead>
                     <tbody className="text-purple-600">

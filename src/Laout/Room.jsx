@@ -31,7 +31,7 @@ const Room = ({ service }) => {
                 </div>
             </Link>
             <div className="p-2">
-                <button className="btn btn-outline btn-error">Review now</button>
+                {/* <button className="btn btn-outline btn-error">Review now</button> */}
             </div>
 
         </div>
