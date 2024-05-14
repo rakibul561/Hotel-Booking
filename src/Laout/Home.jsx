@@ -1,5 +1,6 @@
 import Carosel from "../component/Carosel";
 import MapComponent from "./Map";
+import Optional from "./Optional";
 import Rooms from "./Rooms";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
                 <MapComponent></MapComponent>
             </div>
             <Rooms></Rooms>
+            {/* <Optional></Optional> */}
            
         </div>
     );
