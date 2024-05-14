@@ -10,6 +10,7 @@ import Checkout from "../Pagse/Checkout/Checkout";
 import MyBookings from "../Pagse/MyBookings";
 import AllCard from "../Pagse/AllCard";
 import ErrorPagse from "../Pagse/ErrorPagse";
+import Update from "../Pagse/Update";
 
 const router = createBrowserRouter([
 
@@ -51,6 +52,11 @@ const router = createBrowserRouter([
         element: <PrivetRoute>
           <AllCard></AllCard>
         </PrivetRoute>
+      },
+      {
+        path: '/updateBooking/:id',
+        element:<Update></Update>,
+        loader:({params}) => fetch(`http://localhost:5000/bookings/${params.id}`)
       }
     ]
   }

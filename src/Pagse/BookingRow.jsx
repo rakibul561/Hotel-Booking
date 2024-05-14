@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 // import Swal from "sweetalert2";
 import { FaEdit } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BookingRow = ({ book, handleDelete }) => {
 
@@ -41,9 +42,9 @@ const BookingRow = ({ book, handleDelete }) => {
                 </button>
             </th>
             <th>
-                <button className="btn btn-square btn-outline">
-                   <FaEdit></FaEdit>
-                </button>
+            <Link 
+            to={`/updateBooking/${_id}`}
+             className="btn btn-outline btn-warning">Update date</Link>
             </th>
         </tr>
     );
