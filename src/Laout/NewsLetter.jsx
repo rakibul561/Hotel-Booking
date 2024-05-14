@@ -1,15 +1,12 @@
 import { useState } from "react";
-import toast from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
 function Newsletter() {
   const [email, setEmail] = useState("");
-  
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     toast.success("Thank you for subscribing to our newsletter");
-
-   
     setEmail("");
   };
 
@@ -30,9 +27,7 @@ function Newsletter() {
           <input
             type="email"
             value={email}
-            
-            onChange={e => setEmail(e.target.value)}
-            // defaultValue={user?.email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Your email address"
             required
             className="py-3 px-4 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
@@ -45,6 +40,7 @@ function Newsletter() {
           </button>
         </form>
       </div>
+      <Toaster /> {/* Toaster কম্পোনেন্টটি অ্যাপ্লিকেশনে অ্যাড করা হয়েছে */}
     </section>
   );
 }
