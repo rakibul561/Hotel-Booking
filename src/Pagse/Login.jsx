@@ -40,6 +40,7 @@ const Login = () => {
             // providerId
             .catch(error => {
                 console.log(error);
+                toast.error("This didn't work.")
             })
 
 

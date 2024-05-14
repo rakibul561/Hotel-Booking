@@ -80,7 +80,7 @@ const MyBookings = () => {
                             <th>Rooms</th>
                             <th>date</th>
                             <th>Price</th>
-                            <th>Delete</th>
+                            <th>Cencel</th>
                             <th>Update</th>
                            
                         </tr>
