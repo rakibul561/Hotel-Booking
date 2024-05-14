@@ -1,7 +1,7 @@
 const Optional = () => {
     return (
         <div className="my-8">
-            <h2 className="text-center text-4xl my-4">Client Chronicles</h2>
+            <h2 className="text-center text-white text-4xl font-bold my-4">Client Review</h2>
 
             <div className="grid lg:grid-cols-3 gap-4 w-full">
                 <div className="container flex flex-col w-full  p-6  divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">

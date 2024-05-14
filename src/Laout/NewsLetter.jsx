@@ -11,7 +11,7 @@ function Newsletter() {
   };
 
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-gray-100 rounded-xl py-12">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
           Subscribe to Our Newsletter

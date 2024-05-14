@@ -18,7 +18,7 @@ const Rooms = () => {
 
     return (
         <div>
-            <div className="text-center">
+            <div className="text-center text-white">
                 <h2 className="text-3xl text-center font-bold ">Room service </h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero consequatur laborum voluptas, <br />eaque suscipit in eveniet. Deserunt minima provident, doloremque totam assumenda vero quod beatae <br /> eveniet id? Soluta, cum sapiente.</p>
             </div>

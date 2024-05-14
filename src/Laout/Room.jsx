@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 
 
-
 const Room = ({ service }) => {
         
     useEffect(()=>{

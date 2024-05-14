@@ -1,6 +1,7 @@
 import Carosel from "../component/Carosel";
 import MapComponent from "./Map";
 import Newsletter from "./NewsLetter";
+import Optional from "./Optional";
 import Rooms from "./Rooms";
 
 const Home = () => {
@@ -13,8 +14,11 @@ const Home = () => {
                 <MapComponent></MapComponent>
             </div>
             <Rooms></Rooms>
-            {/* <Optional></Optional> */}
-           <Newsletter></Newsletter>
+            
+            <div className="mt-8">
+                <Newsletter></Newsletter>
+            </div>
+            <Optional></Optional> 
         </div>
     );
 };

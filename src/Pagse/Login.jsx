@@ -1,20 +1,24 @@
-import { Link, useLocation, useNavigate,  } from "react-router-dom"
+import { Link, useLocation, useNavigate, } from "react-router-dom"
 import img from '../assets/image/booking-accommodation-mobile-application-website-ordering-guestrooms-finding-hostels-location_335657-2489.jpg'
 import logo from '../assets/logo/editable-hotel-logo-vector-business-corporate-identity-hostel_53876-111553.avif'
 import { useContext } from "react"
 import { AuthContext } from "../Provaider/AuthProvider"
+import { Toaster, toast } from "react-hot-toast";
 
 
 
 
 const Login = () => {
-const location = useLocation();
-  const navigate = useNavigate();
-    const { signIn,googleLoginUser} = useContext(AuthContext);
-    
+    const location = useLocation();
+    const navigate = useNavigate();
+    const { signIn, googleLoginUser } = useContext(AuthContext);
+
     const handleGooglelogin = async () => {
         const userCredential = await googleLoginUser();
         console.log(userCredential);
+        navigate(location?.state ? location.state : "/");
+       toast.success("Login succesfully");
+
         // navigate("/")
     }
 
@@ -30,16 +34,18 @@ const location = useLocation();
                 const user = result.user;
                 console.log(user);
                 navigate(location?.state ? location.state : "/");
+                toast.success("Login succesfully");
+
             })
             // providerId
-            .catch(error =>{
+            .catch(error => {
                 console.log(error);
             })
 
-            
 
-            
-            
+
+
+
     }
 
 
@@ -165,6 +171,7 @@ const location = useLocation();
                     </div>
                 </div>
             </div>
+            <Toaster />
         </div>
     )
 }
