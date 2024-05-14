@@ -1,15 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation, useNavigate,  } from "react-router-dom"
 import img from '../assets/image/booking-accommodation-mobile-application-website-ordering-guestrooms-finding-hostels-location_335657-2489.jpg'
 import logo from '../assets/logo/editable-hotel-logo-vector-business-corporate-identity-hostel_53876-111553.avif'
 import { useContext } from "react"
 import { AuthContext } from "../Provaider/AuthProvider"
 
 
+
+
 const Login = () => {
-
+const location = useLocation();
+  const navigate = useNavigate();
     const { signIn,googleLoginUser} = useContext(AuthContext);
-
-
     
     const handleGooglelogin = async () => {
         const userCredential = await googleLoginUser();
@@ -28,11 +29,13 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                navigate(location?.state ? location.state : "/");
             })
             // providerId
             .catch(error =>{
                 console.log(error);
             })
+
             
 
             
