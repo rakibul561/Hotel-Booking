@@ -102,8 +102,8 @@ const Navbar = () => {
 
             {/* user Menu */}
             <div
-              className={`absolute z-50  ${userOpen ? "block" : "hidden"
-                } flex flex-col  gap-4  shadow-lg bg-base-200 px-8 py-4 top-16 `}
+              className={`absolute  z-50  ${userOpen ? "block" : "hidden"
+                } flex flex-col  gap-4  shadow-lg bg-base-200 px-2  py-4 top-16 `}
             >
               <p className="text-sm text-black font-semibold">{user?.displayName}</p>
               <p className="text-sm text-black font-semibold">{user?.email}</p>

@@ -58,13 +58,13 @@ const Checkout = () => {
 
     return (
         <div>
-            <div>
+            <div className="">
                 <h2 className="text-3xl font-bold text-center">Book Service {description}</h2>
                 <form onSubmit={handleBooking} className="card-body">
                     <div className="grid  grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Name</span>
+                                <span className="label-text ">Name</span>
                             </label>
                             <input type="text" defaultValue={user?.displayName} name="name" className="input input-bordered" required />
                         </div>

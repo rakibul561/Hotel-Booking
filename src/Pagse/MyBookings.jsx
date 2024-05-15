@@ -41,7 +41,7 @@ const MyBookings = () => {
                 if(data.deletedCount > 0){
                      Swal.fire({
                             title: "Deleted!",
-                            text: "Your file has been deleted.",
+                            text: "Your booking Room has been deleted.",
                             icon: "success" 
                           });
 
@@ -77,7 +77,7 @@ const MyBookings = () => {
                             <th>image</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Rooms</th>
+                            <th>Rooms Title</th>
                             <th>date</th>
                             <th>Price</th>
                             <th>Cencel</th>

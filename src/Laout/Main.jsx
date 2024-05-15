@@ -8,9 +8,9 @@ import Fotter from "../component/Fotter";
 const Main = () => {
     return (
         <div>
-            
+             <Navbar></Navbar>
             <div className="max-w-7xl space-y-8 mx-auto">
-                <Navbar></Navbar>
+               
                 <Outlet></Outlet>
             </div>
             <div className="mt-8">
