@@ -10,7 +10,7 @@ const MyBookings = () => {
     const [booking, setBookings] = useState();
     console.log(booking);
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}`
+    const url = `https://hote-booking-server.vercel.app/bookings?email=${user?.email}`
 
     useEffect(() => {
         fetch(url)
@@ -28,32 +28,32 @@ const MyBookings = () => {
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
-          }).then((result) => {
+        }).then((result) => {
             if (result.isConfirmed) {
-            
 
-            fetch(`http://localhost:5000/bookings/${id}`,{
-                method:'DELETE'
-            })
-            .then(res=> res.json())
-            .then(data => {
-                console.log(data);
-                if(data.deletedCount > 0){
-                     Swal.fire({
-                            title: "Deleted!",
-                            text: "Your booking Room has been deleted.",
-                            icon: "success" 
-                          });
 
-                          const remaining = booking.filter(booking => booking._id !== id);
-                          setBookings(remaining)
+                fetch(`https://hote-booking-server.vercel.app/bookings/${id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your booking Room has been deleted.",
+                                icon: "success"
+                            });
 
-                }
-            })
+                            const remaining = booking.filter(booking => booking._id !== id);
+                            setBookings(remaining)
 
-            
+                        }
+                    })
+
+
             }
-          });
+        });
 
     }
 
@@ -65,7 +65,7 @@ const MyBookings = () => {
 
     return (
         <div>
-            
+
 
             <div className="overflow-x-auto">
                 <table className="table">
@@ -82,24 +82,24 @@ const MyBookings = () => {
                             <th>Price</th>
                             <th>Cencel</th>
                             <th>Update</th>
-                           
+
                         </tr>
                     </thead>
                     <tbody className="text-purple-600">
                         {/* row 1 */}
-                       {
-                        booking?.map(book=> <BookingRow
-                        key={book._id}
-                        book={book}
-                        handleDelete={handleDelete}
-                        ></BookingRow>)
-                       }
-                       
-                       
-                        
+                        {
+                            booking?.map(book => <BookingRow
+                                key={book._id}
+                                book={book}
+                                handleDelete={handleDelete}
+                            ></BookingRow>)
+                        }
+
+
+
                     </tbody>
                     {/* foot */}
-                   
+
 
                 </table>
             </div>

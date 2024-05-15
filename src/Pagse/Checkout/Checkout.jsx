@@ -9,11 +9,11 @@ import Swal from "sweetalert2";
 
 const Checkout = () => {
     const services = useLoaderData();
-    const {description, _id, price_per_night,room_image} = services;
+    const { description, _id, price_per_night, room_image } = services;
 
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
 
-     const handleBooking = event =>{
+    const handleBooking = event => {
         event.preventDefault();
 
         const form = event.target;
@@ -30,31 +30,31 @@ const Checkout = () => {
             price: price_per_night
         }
         console.log(booking);
-        
-        fetch('http://localhost:5000/bookings', {
-            method:'POST',
+
+        fetch('https://hote-booking-server.vercel.app/bookings', {
+            method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body:JSON.stringify(booking)
-        
+            body: JSON.stringify(booking)
+
         })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if(data.insertedId){
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'User Booking successfully',
-                    icon: 'success',
-                    confirmButtonText: 'ok'
-                })
-            }
-        })
-    
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'User Booking successfully',
+                        icon: 'success',
+                        confirmButtonText: 'ok'
+                    })
+                }
+            })
 
 
-     }
+
+    }
 
     return (
         <div>

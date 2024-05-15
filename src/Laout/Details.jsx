@@ -12,14 +12,14 @@ const Details = () => {
     // console.log(product);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/newRoom/${id}`)
+        fetch(`https://hote-booking-server.vercel.app/newRoom/${id}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
                 setProducet(data)
-               if(data){
-                toast.success('Successfully created!');
-               }
+                if (data) {
+                    toast.success('Successfully created!');
+                }
             })
     }, [id])
 
@@ -38,12 +38,12 @@ const Details = () => {
                             </div>
                             <p className="text-2xl">Special Ofer: {special_offers}</p>
                             <Link
-                            to={`/checkout/${_id}`}
-                            className="">
-                            <button className="btn btn-outline text-xl w-[200px] mt-2 btn-success">Book Now</button>
-                        </Link>
+                                to={`/checkout/${_id}`}
+                                className="">
+                                <button className="btn btn-outline text-xl w-[200px] mt-2 btn-success">Book Now</button>
+                            </Link>
                         </div>
-                       
+
 
                     </div>
                     <img src={room_image} alt="" className="object-cover w-full rounded-md xl:col-span-3 dark:bg-gray-500" />

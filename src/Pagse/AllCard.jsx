@@ -7,7 +7,7 @@ const AllCard = () => {
     console.log(items);
 
     useEffect(() => {
-        fetch('http://localhost:5000/serviecs')
+        fetch('https://hote-booking-server.vercel.app/serviecs')
             .then(res => res.json())
             .then(data => setItem(data));
     }, [])

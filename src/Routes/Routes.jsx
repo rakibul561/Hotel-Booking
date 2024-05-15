@@ -17,11 +17,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    errorElement:<ErrorPagse></ErrorPagse>,
+    errorElement: <ErrorPagse></ErrorPagse>,
     children: [
       {
-        path:"/",
-        element:<Home></Home>
+        path: "/",
+        element: <Home></Home>
       },
       {
         path: '/login',
@@ -39,24 +39,24 @@ const router = createBrowserRouter([
         </PrivetRoute>
       },
       {
-        path:'/checkout/:id',
-        element:<Checkout></Checkout>,
-        loader: ({params}) => fetch(`http://localhost:5000/serviecs/${params.id}`)
+        path: '/checkout/:id',
+        element: <Checkout></Checkout>,
+        loader: ({ params }) => fetch(`https://hote-booking-server.vercel.app/serviecs/${params.id}`)
       },
       {
-        path:'/bookings',
+        path: '/bookings',
         element: <PrivetRoute><MyBookings></MyBookings></PrivetRoute>
       },
       {
-        path:'/rooms',
+        path: '/rooms',
         element: <PrivetRoute>
           <AllCard></AllCard>
         </PrivetRoute>
       },
       {
         path: '/updateBooking/:id',
-        element:<Update></Update>,
-        loader:({params}) => fetch(`http://localhost:5000/bookings/${params.id}`)
+        element: <Update></Update>,
+        loader: ({ params }) => fetch(`https://hote-booking-server.vercel.app/bookings/${params.id}`)
       }
     ]
   }

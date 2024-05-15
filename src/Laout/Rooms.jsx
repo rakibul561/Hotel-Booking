@@ -9,11 +9,11 @@ const Rooms = () => {
     const item = services.slice(0, 6);
 
     useEffect(() => {
-        fetch('http://localhost:5000/serviecs')
+        fetch('https://hote-booking-server.vercel.app/serviecs')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
-  
+
 
 
     return (
@@ -23,13 +23,13 @@ const Rooms = () => {
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero consequatur laborum voluptas, <br />eaque suscipit in eveniet. Deserunt minima provident, doloremque totam assumenda vero quod beatae <br /> eveniet id? Soluta, cum sapiente.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-               {
-                item.map(service => <Room
-                service={service}
-                key={service._id}
-                >
-                </Room>)
-               }
+                {
+                    item.map(service => <Room
+                        service={service}
+                        key={service._id}
+                    >
+                    </Room>)
+                }
             </div>
         </div>
     );
