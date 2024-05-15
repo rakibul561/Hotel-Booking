@@ -51,7 +51,7 @@ const Update = () => {
 
     return (
         <div>
-            <div >
+            <div className="bg-base-300 rounded-2xl mt-8" >
                 <h2 className="text-3xl font-bold text-center">Update Date Service </h2>
                 <form onSubmit={handleBooking} className="card-body ">
                     <div className="grid  grid-cols-1 md:grid-cols-2 gap-6">
