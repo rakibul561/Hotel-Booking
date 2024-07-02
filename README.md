@@ -2,6 +2,25 @@
 
 [visit live site](http://obtainable-name.surge.sh/)
 
+Project Overview:
+
+Concept: Hotel Booking is a web-based application designed to simplify the process of finding and booking hotels online. It addresses the common problem of spending excessive time and effort in searching for suitable accommodations.
+Problem Solved: The platform offers users a streamlined and efficient way to browse, compare, and book hotels, enhancing the overall travel planning experience.
+Features:
+
+Advanced Search and Filtering:
+Allows users to search for hotels based on location, price range, amenities, and user ratings.
+Real-time Availability and Booking:
+Provides real-time information on room availability and instant booking confirmation.
+User Reviews and Ratings:
+Displays user-generated reviews and ratings to help users make informed decisions.
+Technologies Used:
+
+Frontend: HTML, CSS, JavaScript, React.js
+Backend: Node.js, Express.js
+Database: MongoDB
+Others: RESTful API, JWT for authentication
+
 
 About Hotelify:
 Hotelify is a cutting-edge hotel booking platform designed to revolutionize the way you plan and book your accommodations. With a focus on user-centric features and seamless functionality, Hotelify aims to make your hotel booking experience hassle-free and enjoyable.
