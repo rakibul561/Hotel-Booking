@@ -22,6 +22,12 @@ Database: MongoDB
 Others: RESTful API, JWT for authentication
 
 
+Steps to Clone and Run the Project Locally:
+git clone
+cd your-repo
+npm install
+npm start
+
 About Hotelify:
 Hotelify is a cutting-edge hotel booking platform designed to revolutionize the way you plan and book your accommodations. With a focus on user-centric features and seamless functionality, Hotelify aims to make your hotel booking experience hassle-free and enjoyable.
 
