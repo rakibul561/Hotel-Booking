@@ -25,10 +25,13 @@ Others: RESTful API, JWT for authentication
 
 
 Steps to Clone and Run the Project Locally:
-git clone
-cd your-repo
-npm install
-npm start
+
+
+
+git clone,
+cd your-repo,
+npm install,
+npm start,
 
 
 
